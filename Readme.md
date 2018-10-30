@@ -1,4 +1,4 @@
-# Airflow 1.10 timezone chnage bug replication setup
+# Airflow 1.10 timezone change bug replication setup
 
 We are running Airflow 1.10, we have scheduled ~50 DAGs. We are using local timezone, last night when during timezone change (DST change, Sunday 3AM->2AM) scheduler stopped scheduling the dags. Scheduler processes were up, but no jobs were scheduler.
 Restart didn't help. We had to set up Airflow on clean database. 
