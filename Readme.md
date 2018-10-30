@@ -19,7 +19,7 @@ localhost:8080
 
 and turn on the dag (there is only one)
 
-Dag should start to be invoked every 5 minutes. After ~1 hour when time is changed automatically to 28 Oct 2.00 CET (UTC +01.00) there will be no any further executions.  
+Dag should start to be invoked every 5 minutes. After ~1 hour when time is changed automatically to 28 Oct 2.00 CET (UTC +01.00) there will be no any further executions (even when you wait 1 or 2 hours more, still no execution)
 
 One can log into container and check the status, logs, etc:
 
