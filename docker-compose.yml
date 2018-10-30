@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+  airflow:
+    container_name: airflow
+    build:
+      context: airflow/
+    restart: always
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/config/airflow.cfg:/usr/local/airflow/airflow.cfg
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "10"
+ 
